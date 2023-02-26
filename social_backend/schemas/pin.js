@@ -39,19 +39,20 @@ export default {
     {
       name: 'postedBy',
       title: 'PostedBy',
-      type: 'postedBy',
+      type: 'reference',
+      to: [{type: 'user'}],
     },
     {
       name: 'save',
       title: 'Save',
       type: 'array',
-      of: [{type: 'save'}],
+      of: [{type: 'string'}],
     },
     {
       name: 'comments',
       title: 'Comments',
       type: 'array',
-      of: [{type: 'comment'}],
+      of: [{type: 'string'}],
     },
   ],
 }
